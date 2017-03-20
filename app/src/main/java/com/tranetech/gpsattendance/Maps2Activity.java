@@ -55,7 +55,7 @@ public class Maps2Activity extends FragmentActivity implements OnMapReadyCallbac
     private GoogleApiClient mGoogleApiClient;
     private GoogleMap mGoogleMap;
 
-    // Edited by     Hiren
+    // Edited by     Hiren Amaliyar
 
 
     /**
