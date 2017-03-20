@@ -2,9 +2,7 @@ package com.tranetech.gpsattendance;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.IntentSender;
-import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
@@ -55,7 +53,7 @@ public class Maps2Activity extends FragmentActivity implements OnMapReadyCallbac
     private GoogleApiClient mGoogleApiClient;
     private GoogleMap mGoogleMap;
 
-    // Edited by     Hiren Amaliyar
+    // Edited by     Hiren Amaliyar Markand
 
 
     /**
