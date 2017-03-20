@@ -55,6 +55,9 @@ public class Maps2Activity extends FragmentActivity implements OnMapReadyCallbac
     private GoogleApiClient mGoogleApiClient;
     private GoogleMap mGoogleMap;
 
+    // Edited by Hiren
+
+
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -65,7 +68,7 @@ public class Maps2Activity extends FragmentActivity implements OnMapReadyCallbac
      * installed Google Play services and returned to the app.
      */
     public static boolean isLocationEnabled(Context context) {
-        int locationMode = 0;
+        int locationMode;
         String locationProviders;
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
