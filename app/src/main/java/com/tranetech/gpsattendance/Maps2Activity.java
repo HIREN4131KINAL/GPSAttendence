@@ -28,6 +28,7 @@ import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -214,8 +215,10 @@ public class Maps2Activity extends FragmentActivity implements OnMapReadyCallbac
 //        Toast.makeText(this, "Location Changed", Toast.LENGTH_SHORT).show();
 
         //zoom to current position:
-        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 11));
-
+        // mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 11));
+        CameraUpdate cUpdate = CameraUpdateFactory.newLatLngZoom(
+                latLng, 15);
+        mGoogleMap.animateCamera(cUpdate);
         //If you only need one location, unregister the listener
         //LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
 
